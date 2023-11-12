@@ -9,6 +9,13 @@ public class Demo {
 
         System.out.println();
 
+        Car obj = new Car() {
+            @Override
+            void engine() {
+                System.out.println("engine method");
+            }
+        };
 
+        obj.engine();
     }
 }
